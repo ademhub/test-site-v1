@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account — MyShop</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="account">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">MyShop</a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="shop.html" class="nav-link">Shop</a>
+      <a href="account.html" class="nav-link active">Account</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Cart <span class="cart-count hidden">0</span>
+      </a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="shop.html" class="nav-link">Shop</a>
+    <a href="account.html" class="nav-link">Account</a>
+    <a href="cart.html" class="nav-link">Cart</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>My Account</h1>
+    <p>Manage your orders, settings, and preferences.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container account-layout">
+
+    <!-- Sidebar -->
+    <aside>
+      <div class="account-card">
+        <div class="account-avatar">J</div>
+        <p class="account-name">Jane Doe</p>
+        <p class="account-email">jane@example.com</p>
+      </div>
+      <div class="account-menu">
+        <div class="account-menu-item active" data-panel="orders">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+          My Orders
+        </div>
+        <div class="account-menu-item" data-panel="wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          Wishlist
+        </div>
+        <div class="account-menu-item" data-panel="settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+          Settings
+        </div>
+        <div class="account-menu-item" data-panel="logout" style="color:#ef4444">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          Sign Out
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <div class="account-content">
+
+      <!-- Orders panel -->
+      <div class="account-panel active" id="panel-orders">
+        <div class="panel-header">
+          <h2>My Orders</h2>
+          <p>Track and manage your recent purchases.</p>
+        </div>
+        <div class="orders-list">
+          <div class="order-card">
+            <div class="order-card-header">
+              <div>
+                <p class="order-id">#ORD-48291</p>
+                <p class="order-date text-muted" style="font-size:.8125rem">June 10, 2025</p>
+              </div>
+              <span class="order-status-badge status-delivered">Delivered</span>
+            </div>
+            <div class="order-items-preview">
+              <div class="order-item-chip">🖱️ Wireless Mouse × 1</div>
+              <div class="order-item-chip">📒 Notebook × 2</div>
+            </div>
+            <div class="order-card-footer">
+              <span class="order-total">$89.97</span>
+              <button class="btn btn-outline-dark btn-sm">View details</button>
+            </div>
+          </div>
+          <div class="order-card">
+            <div class="order-card-header">
+              <div>
+                <p class="order-id">#ORD-47103</p>
+                <p class="order-date text-muted" style="font-size:.8125rem">May 28, 2025</p>
+              </div>
+              <span class="order-status-badge status-shipped">Shipped</span>
+            </div>
+            <div class="order-items-preview">
+              <div class="order-item-chip">🎧 Wireless Earbuds × 1</div>
+            </div>
+            <div class="order-card-footer">
+              <span class="order-total">$79.99</span>
+              <button class="btn btn-outline-dark btn-sm">Track package</button>
+            </div>
+          </div>
+          <div class="order-card">
+            <div class="order-card-header">
+              <div>
+                <p class="order-id">#ORD-45882</p>
+                <p class="order-date text-muted" style="font-size:.8125rem">May 12, 2025</p>
+              </div>
+              <span class="order-status-badge status-processing">Processing</span>
+            </div>
+            <div class="order-items-preview">
+              <div class="order-item-chip">💻 Laptop Stand × 1</div>
+              <div class="order-item-chip">🔌 USB-C Hub × 1</div>
+              <div class="order-item-chip">☕ Ceramic Mug × 1</div>
+            </div>
+            <div class="order-card-footer">
+              <span class="order-total">$104.97</span>
+              <button class="btn btn-outline-dark btn-sm">View details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wishlist panel -->
+      <div class="account-panel" id="panel-wishlist">
+        <div class="panel-header">
+          <h2>My Wishlist</h2>
+          <p>Items you've saved for later.</p>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="card-image" style="background:#6366f118">
+              <div class="card-img-inner">⌨️</div>
+            </div>
+            <div class="card-body">
+              <p class="card-category">Electronics</p>
+              <p class="card-name"><a href="product.html?id=2">Mechanical Keyboard</a></p>
+              <div class="card-price"><span class="price-current">$89.99</span></div>
+              <div class="card-actions mt-8">
+                <button class="btn btn-primary btn-sm btn-block" onclick="addToCart(2)">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image" style="background:#16a34a18">
+              <div class="card-img-inner">🌿</div>
+            </div>
+            <div class="card-body">
+              <p class="card-category">Home</p>
+              <p class="card-name"><a href="product.html?id=10">Self-Watering Plant Pot</a></p>
+              <div class="card-price"><span class="price-current">$16.99</span></div>
+              <div class="card-actions mt-8">
+                <button class="btn btn-primary btn-sm btn-block" onclick="addToCart(10)">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Settings panel -->
+      <div class="account-panel" id="panel-settings">
+        <div class="panel-header">
+          <h2>Account Settings</h2>
+          <p>Update your profile and preferences.</p>
+        </div>
+        <div class="form-card">
+          <h3>Personal Information</h3>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>First name</label>
+              <input type="text" value="Jane">
+            </div>
+            <div class="form-group">
+              <label>Last name</label>
+              <input type="text" value="Doe">
+            </div>
+            <div class="form-group form-full">
+              <label>Email address</label>
+              <input type="email" value="jane@example.com">
+            </div>
+            <div class="form-group form-full">
+              <label>Phone number</label>
+              <input type="tel" placeholder="+1 (555) 000-0000">
+            </div>
+          </div>
+          <button class="btn btn-primary">Save changes</button>
+        </div>
+        <div class="form-card mt-16">
+          <h3>Change Password</h3>
+          <div class="form-group">
+            <label>Current password</label>
+            <input type="password" placeholder="••••••••">
+          </div>
+          <div class="form-group">
+            <label>New password</label>
+            <input type="password" placeholder="••••••••">
+          </div>
+          <div class="form-group">
+            <label>Confirm new password</label>
+            <input type="password" placeholder="••••••••">
+          </div>
+          <button class="btn btn-outline-dark">Update password</button>
+        </div>
+      </div>
+
+      <!-- Logout panel -->
+      <div class="account-panel" id="panel-logout">
+        <div class="panel-header">
+          <h2>Sign Out</h2>
+          <p>Are you sure you want to sign out of your account?</p>
+        </div>
+        <div class="form-card" style="max-width:400px">
+          <p style="color:var(--text-muted);margin-bottom:20px">You will need to log in again to access your orders and saved items.</p>
+          <div style="display:flex;gap:12px">
+            <a href="index.html" class="btn btn-danger">Yes, sign out</a>
+            <button class="btn btn-ghost" onclick="document.querySelector('[data-panel=orders]').click()">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-bottom">
+    <p>&copy; 2025 MyShop. All rights reserved.</p>
+    <p><a href="shop.html" style="color:rgba(255,255,255,.5)">← Back to shop</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
