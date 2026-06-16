@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Produit — Le Labo d'Andrea</title>
+  <meta name="description" content="Création 3D artisanale unique par Le Labo d'Andrea. Kawaii, geek, gaming & fidget. Livraison France & Belgique.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="product">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Le Labo d'Andrea</span>
+      <span class="logo-sub">Créations 3D artisanales</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="shop.html" class="nav-link active">Boutique</a>
+      <a href="about.html" class="nav-link">À propos</a>
+      <a href="account.html" class="nav-link">Mon compte</a>
+    </nav>
+    <div class="header-actions">
+      <a href="account.html" class="hdr-icon" title="Mes favoris">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+      </a>
+      <a href="cart.html" class="cart-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Panier <span class="cart-count hidden">0</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="shop.html" class="nav-link">Boutique</a>
+    <a href="about.html" class="nav-link">À propos</a>
+    <a href="account.html" class="nav-link">Mon compte</a>
+    <a href="cart.html" class="nav-link">Panier</a>
+  </nav>
+</header>
+
+<!-- Product detail injected by JS -->
+<div id="product-root"></div>
+
+<!-- Related products -->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Vous aimerez aussi</span>
+      <h2>Dans la même catégorie</h2>
+    </div>
+    <div class="products-grid" id="related-grid"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="foot-logo">Le Labo d'Andrea</p>
+        <p>Des créations 3D kawaii, geek & gaming faites avec passion. Chaque pièce est imprimée artisanalement en France.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Boutique</h4>
+        <a href="shop.html?cat=kawaii">Kawaii</a>
+        <a href="shop.html?cat=geek">Geek</a>
+        <a href="shop.html?cat=gaming">Gaming</a>
+        <a href="shop.html?cat=fidget">Fidget</a>
+        <a href="shop.html?cat=déco">Déco</a>
+      </div>
+      <div class="foot-col">
+        <h4>Aide</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Livraison & retours</a>
+        <a href="#">Suivi de commande</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Suivez-nous</h4>
+        <div class="footer-socials">
+          <a class="social-icon" href="#" title="TikTok" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+          <a class="social-icon" href="#" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a class="social-icon" href="#" title="Etsy" aria-label="Etsy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></a>
+          <a class="social-icon" href="#" title="Pinterest" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Le Labo d'Andrea. Tous droits réservés.</p>
+      <p style="color:rgba(255,255,255,.35);font-size:.8125rem">Conçu avec soin · Imprimé en France</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/anim.js"></script>
+</body>
+</html>
